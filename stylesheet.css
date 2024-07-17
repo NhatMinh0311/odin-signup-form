@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+input, button{
+    font-family: inherit;
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+#background-container {
+    position: relative;
+    width: 650px;
+    height: 975px;
+}
+
+#background-container > img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    top: 200px;
+    z-index: 1;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 20px;
+    > img {
+        height: 120px;
+    }
+    > div {
+        font-size: 100px;
+        color: white;
+        align-self: center;
+        font-family: 'norsebold';
+    }
+}
+
+#source {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    color: white;
+    bottom: 10px;
+}
+
+#form-container {
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    
+}
+
+
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    border: 1px solid blue;
+    border-radius: 6px;
+    outline: none;
+    box-shadow: 2px 2px 2px rgb(185, 185, 185);
+}
+
+input {
+    height: 2.4em;
+    width: 250px;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    display: block;
+}
+
+
+
+a {
+    color: inherit;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    padding: 0;
+}
+
+fieldset {
+    padding: 16px;
+    border-width: 0;
+    box-shadow: 0 2px 5px rgb(185, 185, 185);
+}
+li {
+    margin: 10px 30px;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    border-width: 0;
+    border-radius: 6px;
+    font-size: 1.8em;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 40px 50px;
+}
+
+strong {
+    font-size: 2.2em;
+    margin-left: 30px;
+}
+
+#redirect-login {
+    margin:  0 50px ;
+    font-size: 1.5em;
+    > a {
+        color:#596D48;
+        text-decoration: none;
+    }
+}
